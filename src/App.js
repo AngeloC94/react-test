@@ -6,10 +6,12 @@ import Details from "./Details";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detailsmeal/:id" element={<Details />} />
-      </Routes>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mealdetails/:id" element={<Details />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
